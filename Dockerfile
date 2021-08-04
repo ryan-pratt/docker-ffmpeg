@@ -22,6 +22,8 @@ RUN apk add --update \
   libvorbis-dev \
   libwebp-dev \
   libtheora-dev \
+  libsrt \
+  libsrt-dev \
   opus-dev \
   openssl \
   openssl-dev \
@@ -65,6 +67,7 @@ RUN cd /tmp/ffmpeg-${FFMPEG_VERSION} && \
   --enable-libwebp \
   --enable-librtmp \
   --enable-librav1e \
+  --enable-libsrt \
   --enable-postproc \
   --enable-libfreetype \
   --enable-openssl \
@@ -97,6 +100,7 @@ RUN apk add --update \
   libvorbis \
   libwebp \
   libtheora \
+  libsrt \
   opus \
   rtmpdump \
   x264-dev \
